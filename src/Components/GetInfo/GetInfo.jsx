@@ -52,7 +52,7 @@ const GetInfo = () => {
                     {(username == "")
                         ? <div className="lopa_pos">
                             <img className="lopa" src={lopa}></img>
-                            <div className="lopa_text">Start with searching a GitHub user</div>
+                            <div className="lopa_text">Start with searching a user</div>
                         </div>
                         : (loading)
                             ? <div className="loader"></div>
