@@ -13,9 +13,9 @@ const Input = ({ setUsername, setErr }) => {
 
     return (
         <div className="header">
-            <img className="logo" src={logo} />
+            <img className="logo" alt="logo" src={logo} />
             <div className="search_pos__rel">
-                <img className="search_pos__abs" src={search} />
+                <img className="search_pos__abs" alt="search" src={search} />
                 <input className="searchLine" type="text" placeholder="Enter GitHub username" onKeyPress={handleInfo} />
             </div>
         </div>

@@ -13,10 +13,11 @@
 
 .user_follow {
     display: flex;
+    width: 360px;
 }
 
 .user_followers {
-    margin-left: 56px;
+    margin-left: 47px;
     display: flex;
 }
 

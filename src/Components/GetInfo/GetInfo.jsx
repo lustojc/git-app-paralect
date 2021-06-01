@@ -17,21 +17,20 @@ const GetInfo = () => {
     const [loading, setLoading] = useState(false);
     const firstLoading = useRef(true);
 
-    const handleUserRequest = () => {
-        if (firstLoading.current) {
-            firstLoading.current = false;
-            return;
-        }
-        axios.get(`https://api.github.com/users/${username}`)
-            .then((data) => {
-                setData(data.data);
-                setLoading(true);
-            }, (err) => {
-                setErr(err);
-            });
-    };
-
     useEffect(() => {
+        const handleUserRequest = () => {
+            if (firstLoading.current) {
+                firstLoading.current = false;
+                return;
+            }
+            axios.get(`https://api.github.com/users/${username}`)
+                .then((data) => {
+                    setData(data.data);
+                    setLoading(true);
+                }, (err) => {
+                    setErr(err);
+                });
+        };
         handleUserRequest();
     }, [username]);
 
@@ -49,17 +48,17 @@ const GetInfo = () => {
             <div>
                 <div className="main_body">
                     <Input username={username} setUsername={setUsername} setErr={setErr} />
-                    {(username == "")
+                    {(!username)
                         ? <div className="lopa_pos">
-                            <img className="lopa" src={lopa}></img>
-                            <div className="lopa_text">Start with searching a user</div>
+                            <img className="lopa" alt="search" src={lopa}></img>
+                            <div className="lopa_text">Start with searching a GitHub user</div>
                         </div>
                         : (loading)
                             ? <div className="loader"></div>
                             : <div>
                                 {(err)
                                     ? <div className="not_found">
-                                        <img src={notFound}></img>
+                                        <img src={notFound} alt="notFound"></img>
                                     </div>
                                     : <div>
                                         <div className="main_info">
@@ -72,7 +71,7 @@ const GetInfo = () => {
                                                 </div>
                                             </div>
                                             <div className="rep-width">
-                                                <Repositories  username={username} data={data} rep={rep} setRep={setRep} />
+                                                <Repositories username={username} data={data} rep={rep} setRep={setRep} />
                                             </div>
                                         </div>
                                     </div>}

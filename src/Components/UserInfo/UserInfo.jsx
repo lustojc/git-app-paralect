@@ -11,16 +11,16 @@ const UserInfo = ({ data }) => {
                 <h1 className="name">{data.name}</h1>
             </div>
             <div>
-                <a className="name_link" target="_blank" href={data.html_url}>{data.login}</a>
+                <a className="name_link" target="_blank" rel="noreferrer" href={data.html_url}>{data.login}</a>
             </div>
             <div className="user_follow">
                 <div className="user_followers">
-                    {(data.followers) ? <div><img className="men_icon" src={followers}></img></div> : <div></div>}
-                    {(data.followers) ? <div className="followers">{Math.round(data.followers / 1000)}k followers</div> : <div></div>}
+                    {(data.followers) ? <div><img className="men_icon" alt="followers" src={followers}></img></div> : <div></div>}
+                    {(data.followers >= 10000) ? <div className="followers">{(data.followers /1000).toFixed(1)}k followers</div> : <div className="followers">{(data.followers)} followers</div>}
                 </div>
                 <div className="user_following">
-                    {(data.following) ? <div><img className="men_icon" alt="following" src={following} ></img></div> : <div></div>}
-                    {(data.following) ? <div className="followers">{data.following} following</div> : <div></div>}
+                    <div><img className="men_icon" alt="following" src={following} ></img></div>
+                    <div className="followers">{data.following} following</div>
                 </div>
             </div>
         </div>
