@@ -10,7 +10,7 @@ const UserInfo = ({ data }) => {
             <div>
                 <h1 className="name">{data.name}</h1>
             </div>
-            <div>
+            <div className="userlink_marg">
                 <a className="name_link" target="_blank" rel="noreferrer" href={data.html_url}>{data.login}</a>
             </div>
             <div className="user_follow">
