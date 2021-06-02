@@ -206,6 +206,12 @@
     } 
 }
 
+@media (max-width: 350px) {
+    .main_repos {
+        margin-left: 10px;
+    }
+}
+
 
  
 
