@@ -2,7 +2,7 @@ body {
      background-color: #F9F9F9;
 }
 
-.rep-width {
+.rep_width {
      width: 100%;
      position: relative;
 }
@@ -99,6 +99,10 @@ body {
 @media (max-width:350px){
      .main_info {
           left: 0;
+     }
+
+     .rep_width {
+          max-width: 300px;
      }
 }
 

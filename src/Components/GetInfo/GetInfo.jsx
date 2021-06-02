@@ -70,7 +70,7 @@ const GetInfo = () => {
                                                     <UserInfo data={data} />
                                                 </div>
                                             </div>
-                                            <div className="rep-width">
+                                            <div className="rep_width">
                                                 <Repositories username={username} data={data} rep={rep} setRep={setRep} />
                                             </div>
                                         </div>
