@@ -1,63 +1,63 @@
 .name {
-    margin-left: 56px;
-    margin-bottom: 12px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+  margin-left: 56px;
+  margin-bottom: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 .name_link {
-    margin-left: 56px;
-    margin-bottom: 25px;
-    font-family: 'Inter', sans-serif;
+  margin-left: 56px;
+  margin-bottom: 25px;
+  font-family: "Inter", sans-serif;
 }
 
 .user_follow {
-    display: flex;
-    width: 360px;
+  display: flex;
+  width: 360px;
 }
 
 .user_followers {
-    margin-left: 47px;
-    display: flex;
+  margin-left: 47px;
+  display: flex;
 }
 
 .user_following {
-    margin-left: 16px;
-    display: flex;
+  margin-left: 16px;
+  display: flex;
 }
 
 .men_icon {
-    width: 24px;
-    height: 24px;
-    margin-top: 25px;
+  width: 24px;
+  height: 24px;
+  margin-top: 25px;
 }
 
 .followers {
-    margin-top: 28px;
-    margin-left: 8px;
-    font-family: 'Inter', sans-serif;   
+  margin-top: 28px;
+  margin-left: 8px;
+  font-family: "Inter", sans-serif;
 }
 
 .man__ic {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
-@media (max-width:460px) {
-    .user_followers {
-        margin-left: 10px;
-    }
+@media (max-width: 460px) {
+  .user_followers {
+    margin-left: 10px;
+  }
 
-    .name{
-        margin-left: 10px;
-    }
+  .name {
+    margin-left: 10px;
+  }
 
-    .name_link {
-        margin-left: 10px;
-    }
+  .name_link {
+    margin-left: 10px;
+  }
 }
 
-@media (max-width:377px) {
-    .user_follow {
-        width: 300px; 
-    }
+@media (max-width: 377px) {
+  .user_follow {
+    width: 300px;
+  }
 }
