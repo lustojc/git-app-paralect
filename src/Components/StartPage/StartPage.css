@@ -1,0 +1,33 @@
+.icon_pos {
+  height: 50em;
+  position: relative;
+}
+
+.iconImg {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headline_text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter", sans-serif;
+  color: #808080;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+  .headline_text {
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 30px;
+  }
+}

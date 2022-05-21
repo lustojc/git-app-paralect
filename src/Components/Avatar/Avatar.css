@@ -1,22 +1,22 @@
 .avatar {
-    margin-top: 39px;
-    margin-left: 57px;
-    margin-bottom: 29px;
+  margin-top: 39px;
+  margin-left: 57px;
+  margin-bottom: 29px;
 }
 
 .avatar_img {
-    width: 280px;
-    height: 280px;
-    border-radius: 300px;
+  width: 280px;
+  height: 280px;
+  border-radius: 300px;
 }
 
-@media (max-width:460px) {
-    .avatar {
-         margin-left: 10px;
-    }
+@media (max-width: 460px) {
+  .avatar {
+    margin-left: 10px;
+  }
 
-    .avatar_img {
-        width: 140px;
-        height: 140px;
-    }
+  .avatar_img {
+    width: 140px;
+    height: 140px;
+  }
 }

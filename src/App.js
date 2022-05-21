@@ -1,11 +1,8 @@
-
-import './App.css';
-import GetInfo from './Components/GetInfo/GetInfo';
+import "./App.css";
+import MyApp from "./Components/MyApp/MyApp";
 
 function App() {
-  return ( 
-      <GetInfo /> 
-  );
-};
+  return <MyApp />;
+}
 
 export default App;
